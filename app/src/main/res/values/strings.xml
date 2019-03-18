@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">OjassAdminApp</string>
+
+    <string-array name="tshirt_size">
+        <item>XS (34)</item>
+        <item>S (36)</item>
+        <item>M (38)</item>
+        <item>L (40)</item>
+        <item>XL (42)</item>
+        <item>XXL (44)</item>
+    </string-array>
+
+    <string-array name="noti_channel">
+        <item>OJASS</item>
+        <item>Arthashastra</item>
+        <item>CircuitHouse</item>
+        <item>VishwaCodeGenesis</item>
+        <item>NoGroundZone</item>
+        <item>Paraphernalia</item>
+        <item>Produs</item>
+        <item>SiliconValley</item>
+        <item>RiseOfMachines</item>
+        <item>NSCET</item>
+        <item>NeoDrishti</item>
+        <item>Exposicion</item>
+        <item>DeusXMachina</item>
+        <item>Avartan</item>
+        <item>Armageddon</item>
+        <item>Aakriti</item>
+        <item>Prayas</item>
+        <item>LiveCS</item>
+    </string-array>
+    <string name="facebook_app_id" tools:ignore="ExtraTranslation">377026519523975</string>
+
+
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">b0b2ade0b4f59b3f4c428b17579a9342</string>
+    <string name="ak_login_protocol_scheme">ak377026519523975</string>
+
+    <string-array name="loading">
+        <item>Loading</item>
+    </string-array>
+</resources>

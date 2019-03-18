@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"
+            android:background="@drawable/dialog_edit_text_bg"
+            android:hint="Email ID..."
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_bg"
+            android:id="@+id/search_btn_email"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:text="Search"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/email_id"
+            android:layout_width="200dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

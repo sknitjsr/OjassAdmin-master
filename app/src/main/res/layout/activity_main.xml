@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ojassadmin.nitjsr.in.ojassadmin.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/white_ojass"
+            android:layout_marginLeft="5dp"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ojass Admin"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <ImageView
+            android:id="@+id/iv_show_qr"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_qrcode"
+            android:padding="15dp"
+            android:tint="@android:color/white"
+            android:background="@android:color/transparent"/>
+
+        <ImageView
+            android:id="@+id/iv_logout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_person"
+            android:padding="10dp"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_top_bar">
+
+        <Button
+            android:background="@drawable/button_bg"
+            android:textSize="@dimen/btn_text_size"
+            android:textAllCaps="false"
+            android:text="Search"
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_bg"
+            android:textSize="@dimen/btn_text_size"
+            android:textAllCaps="false"
+            android:text="Events"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:id="@+id/events"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_bg"
+            android:textSize="@dimen/btn_text_size"
+            android:textAllCaps="false"
+            android:text="Notifications"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:id="@+id/noti"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_bg"
+            android:textSize="@dimen/btn_text_size"
+            android:textAllCaps="false"
+            android:text="Admin Search"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:id="@+id/admin"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_bg"
+            android:textSize="@dimen/btn_text_size"
+            android:textAllCaps="false"
+            android:text="Add User"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:id="@+id/add_user"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_bg"
+            android:textSize="@dimen/btn_text_size"
+            android:textAllCaps="false"
+            android:text="DB Info"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:id="@+id/dbInfo"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver : 2.0"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

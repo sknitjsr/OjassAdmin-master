@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ojassadmin.nitjsr.in.ojassadmin.AdminDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/ib_admin_edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_menu_edit"
+            android:background="@android:color/transparent"
+            android:layout_gravity="right"
+            android:tint="#000"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/iv_admin_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            tools:background="@color/colorAccent"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_weight="0.25"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Name" />
+
+            <EditText
+                android:textSize="17sp"
+                android:layout_weight="0.75"
+                android:id="@+id/et_admin_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_weight="0.25"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Email" />
+
+            <EditText
+                android:textSize="17sp"
+                android:layout_weight="0.75"
+                android:id="@+id/et_admin_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_weight="0.25"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Number" />
+
+            <EditText
+                android:textSize="17sp"
+                android:layout_weight="0.75"
+                android:id="@+id/et_admin_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_weight="0.25"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Branch" />
+
+            <EditText
+                android:textSize="17sp"
+                android:layout_weight="0.75"
+                android:id="@+id/et_admin_branch"
+                android:layout_width="0dp"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_weight="0.25"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Reg Id" />
+
+            <EditText
+                android:textSize="17sp"
+                android:layout_weight="0.75"
+                android:id="@+id/et_admin_reg_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_weight="0.25"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Access" />
+
+            <EditText
+                android:textSize="17sp"
+                android:layout_weight="0.75"
+                android:id="@+id/et_admin_access"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_admin_update"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Update"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/button_bg"/>
+
+    </LinearLayout>
+
+</ScrollView>
